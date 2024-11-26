@@ -1,0 +1,112 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(255,69,0,1) 0%, rgba(255,140,0,1) 50%, rgba(255,69,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos generales para la barra lateral */
+.sidebar {
+    width: 250px; /* Ajusta el ancho de la barra lateral */
+    height: 100%; /* Ocupa el 100% del alto de la pantalla */
+    background-color: #2c3e50; /* Color de fondo de la barra lateral */
+    position: fixed; /* Fija la barra lateral en la pantalla */
+    top: 0;
+    left: 0;
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para los enlaces dentro de la barra lateral */
+.sidebar a {
+    display: block; /* Hace que cada enlace ocupe toda la anchura disponible */
+    color: #ecf0f1; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 10px; /* Espaciado interno para los enlaces */
+    margin: 5px 0; /* Margen entre los enlaces */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para los efectos de hover */
+    width: 100%; /* Asegura que los enlaces ocupen todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo cuando se pasa el cursor sobre un enlace */
+.sidebar a:hover {
+    background-color: #34495e; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Color del texto al pasar el cursor */
+}
+
+/* Estilo para el enlace "Salir" al final */
+.sidebar a[href="login.php"] {
+    margin-top: auto; /* Empuja el enlace "Salir" hacia el fondo de la barra lateral */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 80%; /* Ajusta el ancho máximo del contenedor */
+    margin-top: 20px;
+}
+
+/* Estilo para los encabezados */
+h2 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo para los inputs y selectores */
+input[type="text"], select {
+    width: calc(100% - 20px); /* Ajustar el ancho del input */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+/* Estilo para los botones */
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e03c00;
+}
