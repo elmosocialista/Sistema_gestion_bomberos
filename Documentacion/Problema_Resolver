@@ -1,0 +1,3 @@
+Nuestro proyecto intenta solucionar los procedimientos tediosos a seguir para realizar llamados a la hora de surgir incendios en distintas zonas de una ciudad.
+Ya que es necesario saber qué compañías tienen el personal suficiente para atender el llamado, esta aplicación contara con un sistema para registrar el ingreso de los bomberos a su respectivo cuartal y, asi, dejar constancia en el sistema de que esa compañía en especifico es apta o no para solucionar el siniestro.
+Este sistema de registro se realizara con tarjetas RFID; esto hara posible cuantificar la cantidad de voluntarios presentes en el momento de surgir una emergencia y asi poder desplegar las unidades correctas.
